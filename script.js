@@ -49,9 +49,26 @@ class BinarySearchTree {
 
 const bst = new BinarySearchTree();
 
-bst.insert('gatos', 'https://www.example.com/cats');
-bst.insert('cachorros', 'https://www.example.com/dogs');
-bst.insert('receitas', 'https://www.example.com/recipes');
+const data = [
+    { keyword: 'gatos', url: 'https://www.example.com/cats' },
+    { keyword: 'cachorros', url: 'https://www.example.com/dogs' },
+    { keyword: 'receitas', url: 'https://www.example.com/recipes' },
+    { keyword: 'tecnologia', url: 'https://www.example.com/technology' },
+    { keyword: 'noticias', url: 'https://www.example.com/news' },
+    { keyword: 'esportes', url: 'https://www.example.com/sports' },
+    { keyword: 'viagens', url: 'https://www.example.com/travel' },
+    { keyword: 'jogos', url: 'https://www.example.com/games' },
+    { keyword: 'comida', url: 'https://www.example.com/food' },
+    { keyword: 'aprendizado', url: 'https://www.example.com/learning' }
+];
+
+function buildTreeFromData() {
+    for (const item of data) {
+        bst.insert(item.keyword, item.url);
+    }
+}
+
+buildTreeFromData(); 
 
 const searchForm = document.getElementById("searchForm");
 const searchKeyword = document.getElementById("searchKeyword");

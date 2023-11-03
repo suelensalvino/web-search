@@ -1,1 +1,3 @@
 # web-search
+
+Este é um projeto da disciplina de Algoritmos e Estruturas de Dados e consiste em uma implementação de uma Árvore de Busca Binária. A árvore é usada para armazenar e recuperar URLs com base em palavras-chave. Os usuários podem inserir palavras-chave em um campo de pesquisa na página e obter o URL correspondente, se existir. O projeto inclui classes para representar a árvore, dados de exemplo para construí-la e funcionalidades de pesquisa. É uma demonstração simples de como uma Árvore de Busca Binária pode ser usada em um mecanismo de busca.
