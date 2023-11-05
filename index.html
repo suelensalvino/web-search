@@ -2,19 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Árvore de Busca Binária</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Busca Dor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container mt-4">
-        <h1>Árvore de Busca Binária</h1>
-        <form id="searchForm" class="form-inline mt-3">
-            <div class="form-group">
-                <input type="text" class="form-control" id="searchKeyword" placeholder="Digite uma palavra-chave">
+<body class="bg-gray-100">
+    <div class="container mx-auto p-24">
+        <h1 class="text-center">
+            <img src="./img/web-search-logo.png" alt="Logo Busca Dor">
+        </h1>
+        <form id="searchForm" class="mt-4">
+            <div class="max-w-md mx-auto">
+                <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden border-solid border-2 border-gray-300">
+                    <div class="grid place-items-center h-full w-12 text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <input
+                        class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
+                        type="text"
+                        id="searchKeyword"
+                        placeholder="Digite uma palavra-chave"
+                    />
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Pesquisar</button>
         </form>
-        <div id="searchResult" class="mt-3"></div>
+        <div id="searchResult" class="py-4 text-center"></div>
     </div>
     <script src="script.js"></script>
 </body>
