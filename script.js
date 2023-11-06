@@ -149,7 +149,7 @@ searchForm.addEventListener("submit", function (e) {
 
         searchResult.innerHTML += `Sites encontrados para a pesquisa "${searchTerm}":<br><br>`;
         for (const urlData of result) {
-            searchResult.innerHTML += `<p><a href="${urlData.url}" class="text-blue-800 font-bold">${urlData.title}</a><br>${urlData.description}</p><br>`;
+            searchResult.innerHTML += `<p><a target="_blank" href="${urlData.url}" class="text-blue-800 font-bold">${urlData.title}</a><br>${urlData.description}</p><br>`;
         }
     } else {
         searchResult.innerHTML = `<p class="text-red-500 font-bold">Nenhum site encontrado para a pesquisa "${searchTerm}".`;
